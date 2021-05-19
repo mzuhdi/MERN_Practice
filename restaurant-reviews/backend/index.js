@@ -28,8 +28,3 @@ MongoClient.connect(
             console.log(`listening on port ${port}`)
         })
     })
-
-    //Dev Branch diff
-    //Diff 3
-    //rebaseboyz
-    //MORECHANGE
