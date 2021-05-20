@@ -83,7 +83,53 @@ export default class RestaurantsDAO {
 
     }
 
-    static async getRestaurantsByCuisine(){
+    static async getRestaurantByIdReview(id) {
+        try {
+            const pipeline = [
+                {
+                    $match: {
+                        _id: new ObjectId(id),
+                    },
+                },
+                {
+                    $lookup: {
+                        from: "reviews",
+                        let: {
+                            id: "$_id",
+                        },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $eq: ["$restaurant_id", "$$id"],
+                                    },
+                                },
+                            },
+                            {
+                                $sort: {
+                                    date: -1,
+                                },
+                            },
+                        ],
+                        as: "reviews",
+                    },
+                },
+
+                {
+                    $addFields: {
+                        reviews: "$reviews",
+                    },
+                },
+            ]
+            return await restaurants.aggregate(pipeline).next()
+        } catch (e) {
+            console.error(`Somethjing went wrong in getRestaurantByIdReview: ${e}`)
+            throw e
+        }
+    }
+
+
+    static async getRestaurantsByCuisine() {
         let cuisine = []
 
         try {

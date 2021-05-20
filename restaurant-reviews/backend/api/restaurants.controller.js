@@ -47,6 +47,23 @@ export default class RestaurantsController {
         }
     }
 
+    static async apiGetRestraurantByIdReview(req, res, next) {
+
+        try {
+            let id = req.params.id || {}
+            let restaurantsList = await RestaurantsDAO.getRestaurantByIdReview(id)
+
+            if (!restaurantsList) {
+                res.status(404).json({ error: "Unable to find restaurant by that ID" })
+                return
+            }
+            res.json(restaurantsList)
+        } catch (e) {
+            console.log(`apiGetRestaurantById, ${e}`)
+            res.status(500).json({ error: e })
+        }
+    }
+
     static async apiGetRestraurantsCuisines(req, res, next) {
 
         try {
