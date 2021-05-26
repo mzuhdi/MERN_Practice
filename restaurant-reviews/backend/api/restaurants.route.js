@@ -7,7 +7,7 @@ const router = express.Router()
 router.route("/").get(RestaurantsCtrl.apiGetRestraurants)
 router.route("/id/:id").get(RestaurantsCtrl.apiGetRestraurantById)
 router.route("review/id/:id").get(RestaurantsCtrl.apiGetRestraurantByIdReview)
-router.route("/cuisine").get(RestaurantsCtrl.apiGetRestraurantsCuisines)
+router.route("/cuisines").get(RestaurantsCtrl.apiGetRestraurantsCuisines)
 
 router
     .route("/review")
