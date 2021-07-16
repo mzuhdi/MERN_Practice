@@ -34,7 +34,7 @@ Install latest version of npm
 
 # Usage
 
-![]https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/login.gif
+![] (https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/login.gif)
 
 **Creating an Account**
 
