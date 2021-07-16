@@ -81,7 +81,7 @@ Install latest version of npm
 
 **Delete Review**
 
-![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/delete%20Review.gif)
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/delete%20review.gif)
 
 1. Click on 'Delete' button on the review
 
