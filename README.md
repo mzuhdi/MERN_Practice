@@ -1,5 +1,5 @@
 # Restaurant Review
-I wanted to learn how to create a simple web application using the MERN stack. The restaurant data is pulled from MongoDB restaurant sample data. 
+Created simple web application using the MERN stack. The restaurant data is pulled from MongoDB restaurant sample data. 
 ## Technology Stack
 * M: [MongoDb](https://www.mongodb.com/)
 * E: [Express](https://expressjs.com//)
