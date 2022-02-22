@@ -1,5 +1,5 @@
 # Restaurant Review
-I wanted to learn how to create a simple web application using the MERN stack. The restaurant data is pulled from MongoDB restaurant sample data. 
+Created simple web application using the MERN stack. The restaurant data is pulled from MongoDB restaurant sample data. 
 ## Technology Stack
 * M: [MongoDb](https://www.mongodb.com/)
 * E: [Express](https://expressjs.com//)
@@ -34,9 +34,9 @@ Install latest version of npm
 
 # Usage
 
-![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/login.gif)
-
 **Creating an Account**
+
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/login.gif)
 
 1. Click 'Login' on the navigation bar
 2. Input username and ID
@@ -46,18 +46,26 @@ Install latest version of npm
 
 **Searching by name, zipcode, cuisines**
 
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/filter.gif)
+
 1. Type in name textbox, zipcode textbox, or select from cuisine drop down list
 2. Click 'Search' button on the corresponding textbox
 
 **Viewing Restaurant Location**
 
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/view%20location.gif)
+
 1. Click on 'View Map' button to redirect you to google maps location of the restaurant
 
 **Viewing Review**
 
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/view%20review.gif)
+
 1. Click on 'View Reviews' button to see the reviews from the restaurant
 
 **Add Review**
+
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/add%20Review.gif)
 
 1. Click on 'Add Review' button
 2. Input your review in the textbox
@@ -65,11 +73,15 @@ Install latest version of npm
 
 **Edit Review**
 
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/edit%20review.gif)
+
 1. Click on 'Edit' button on the review
 2. Edit your review in the textbox
 3. Click 'Submit'
 
 **Delete Review**
+
+![](https://github.com/mzuhdi/MERN_RestaurantReview/blob/main/restaurant-reviews/images/delete%20review.gif)
 
 1. Click on 'Delete' button on the review
 
